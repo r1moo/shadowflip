@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background track color -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#FFFFFF"/> <!-- Change this to your desired color -->
+            <size android:height="20dp"/>
+        </shape>
+    </item>
+    <!-- Progress track color -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="#42195B"/> <!-- Change this to your desired color -->
+                <size android:height="20dp"/>
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

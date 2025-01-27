@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".AboutUs">
+
+
+    <ImageView
+        android:id="@+id/wndw_Settings"
+        android:layout_width="365dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wndw_settings1" />
+
+    <ImageView
+        android:id="@+id/btn_Restart"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/wndw_Settings"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/wndw_Settings"
+        app:layout_constraintTop_toBottomOf="@+id/tv_SFX"
+        app:srcCompat="@drawable/btn_restart"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_HowToPlay"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintEnd_toEndOf="@+id/wndw_Settings"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/wndw_Settings"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Restart"
+        app:srcCompat="@drawable/btn_howtoplay"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_Home"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintEnd_toEndOf="@+id/wndw_Settings"
+        app:layout_constraintStart_toStartOf="@+id/wndw_Settings"
+        app:layout_constraintTop_toBottomOf="@+id/btn_About"
+        app:srcCompat="@drawable/btn_home"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_About"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintEnd_toEndOf="@+id/wndw_Settings"
+        app:layout_constraintStart_toStartOf="@+id/wndw_Settings"
+        app:layout_constraintTop_toBottomOf="@+id/btn_HowToPlay"
+        app:srcCompat="@drawable/btn_about"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_Back"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintEnd_toEndOf="@+id/wndw_Settings"
+        app:layout_constraintStart_toStartOf="@+id/wndw_Settings"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Home"
+        app:srcCompat="@drawable/btn_back"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_BGM"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/obraletra_bold"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowRadius="1"
+        android:text="Music"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/icon_BGM"
+        app:layout_constraintTop_toTopOf="@+id/wndw_Settings" />
+
+    <TextView
+        android:id="@+id/tv_SFX"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/obraletra_bold"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowRadius="1"
+        android:text="SFX"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/icon_SFX"
+        app:layout_constraintTop_toBottomOf="@+id/tv_BGM" />
+
+    <SeekBar
+        android:id="@+id/sb_SFX"
+        android:layout_width="182dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/wndw_Settings"
+        app:layout_constraintStart_toEndOf="@+id/tv_SFX"
+        app:layout_constraintTop_toBottomOf="@+id/sb_BGM" />
+
+    <SeekBar
+        android:id="@+id/sb_BGM"
+        android:layout_width="182dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/wndw_Settings"
+        app:layout_constraintStart_toEndOf="@+id/tv_BGM"
+        app:layout_constraintTop_toTopOf="@+id/wndw_Settings" />
+
+    <ImageView
+        android:id="@+id/icon_BGM"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="65dp"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintStart_toStartOf="@+id/wndw_Settings"
+        app:layout_constraintTop_toTopOf="@+id/wndw_Settings"
+        app:srcCompat="@drawable/icon_bgm" />
+
+    <ImageView
+        android:id="@+id/icon_SFX"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintStart_toStartOf="@+id/wndw_Settings"
+        app:layout_constraintTop_toBottomOf="@+id/icon_BGM"
+        app:srcCompat="@drawable/icon_sfx" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

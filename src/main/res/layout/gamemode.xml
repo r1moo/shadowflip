@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="38dp">
+
+    <ImageView
+        android:id="@+id/wndw_Difficulty"
+        android:layout_width="365dp"
+        android:layout_height="290dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412"
+        app:srcCompat="@drawable/wndw_difficulty" />
+
+
+    <ImageView
+        android:id="@+id/btn_Easy"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/wndw_Difficulty"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/btn_easy"
+        tools:srcCompat="@drawable/btn_easy" />
+
+    <ImageView
+        android:id="@+id/btn_Medium"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Easy"
+        app:srcCompat="@drawable/btn_medium"
+        tools:srcCompat="@drawable/btn_medium" />
+
+    <ImageView
+        android:id="@+id/btn_Back"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Hard"
+        app:srcCompat="@drawable/btn_back"
+        tools:srcCompat="@drawable/btn_back" />
+
+    <ImageView
+        android:id="@+id/btn_Hard"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Medium"
+        app:srcCompat="@drawable/btn_hard"
+        tools:srcCompat="@drawable/btn_hard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
